@@ -6,7 +6,7 @@ function App() {
   
   return (
     <>
-      <h5 className="text-success">Shopping Cart</h5>
+      <h5 className="text-success">SPA</h5>
     </>
   )
 }
