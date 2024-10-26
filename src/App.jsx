@@ -10,10 +10,10 @@ function App() {
     <div>
       <Routes>
         {/* route layout is the parent for others and the contains navbar and footer nad also dynamic children. other routes are its dynamic children that are nested */}
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/posts" element={<Posts />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />   {/* Here when we are in layout path the main page is home (as an index) */}
+          <Route path="posts" element={<Posts />} />
+          <Route path="dashboard" element={<Dashboard />} />
         </Route>
       </Routes>
     </div>

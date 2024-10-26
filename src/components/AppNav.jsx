@@ -8,10 +8,10 @@ function AppNav() {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/posts">Posts</NavLink>
+          <NavLink to="posts">Posts</NavLink>
         </li>
         <li>
-          <NavLink to="/dashboard">Dashboard</NavLink>
+          <NavLink to="dashboard">Dashboard</NavLink>
         </li>
       </ul>
     </nav>
