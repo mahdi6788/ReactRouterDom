@@ -1,13 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { Route, Routes } from "react-router-dom"
+import "./App.css"
+import Home from "./pages/Home"
+import Posts from "./pages/Posts"
+import Dashboard from "./pages/Dashboard"
+import AppNav from "./components/AppNav"
 
 function App() {
-  
   return (
-    <>
-      <h5 className="text-success">SPA</h5>
-    </>
+    <div>
+      <AppNav/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/posts" element={<Posts/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
+      </Routes>
+    </div>
   )
 }
 
