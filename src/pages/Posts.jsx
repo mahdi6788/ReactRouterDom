@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom"
+
 function Posts(){
     return(
         <div>
-            Posts
+            <h1>Posts</h1>
+            <Link to={"/"}>Back to home</Link>
         </div>
     )
 }
