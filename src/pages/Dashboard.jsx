@@ -1,6 +1,9 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { NavLink, Outlet, useLocation } from "react-router-dom"
 
 function Dashboard(){
+    const location = useLocation()
+    console.log(location)
+
     return(
         <div id="dashboard">
             <div id="sidebar">
