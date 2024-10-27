@@ -4,7 +4,20 @@ function Posts(){
     return(
         <div>
             <h1>Posts</h1>
-            <Link to={"/"}>Back to home</Link>
+
+            <ul>
+                <li>
+                    <Link to="1">Post1</Link>
+                </li>
+                <li>
+                <Link to="2">Post2</Link>
+                </li>
+                <li>
+                <Link to="3">Post3</Link>
+                </li>
+
+            </ul>
+            
         </div>
     )
 }
